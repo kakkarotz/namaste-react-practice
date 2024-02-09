@@ -38,7 +38,7 @@
     padding: 5px;
     width: 200px;
     /* height: 310px; */
-    border: 0.5px solid rgb(52, 49, 35);
+    /* border: 0.5px solid rgb(52, 49, 35); */
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.2s ease-in;
@@ -56,4 +56,16 @@
 .filter-btn{
     margin: 10px;
     cursor: pointer;
+}
+
+.shimmer-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.shimmer-card{
+    width: 200px;
+    height: 400px;
+    background-color: #f0f0f0;
+    margin: 20px;
 }
