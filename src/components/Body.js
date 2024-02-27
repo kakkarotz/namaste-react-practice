@@ -25,7 +25,7 @@ const Body = () => {
 
     data =
       res?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants;
-    console.log(data);
+    // console.log(data);
 
     setListOfRestaurants(data);
     setFilteredRestaurants(data);
@@ -50,6 +50,7 @@ const Body = () => {
         <div className="search m-2 p-2">
           <input
             type="text"
+            data-testid="searchInput"
             className="border border-solid border-black"
             value={searchText}
             onChange={(e) => setSearchText(e.target.value)}

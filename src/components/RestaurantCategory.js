@@ -6,6 +6,9 @@ const RestaurantCategory = ({ data, showItems, setShowIndex }) => {
     setShowIndex();
   };
 
+  console.log(data, "DATAFEWWEGWERGWRGWE");
+  // alert("");
+
   return (
     <div>
       {/* Header */}
@@ -23,7 +26,10 @@ const RestaurantCategory = ({ data, showItems, setShowIndex }) => {
           <ItemList items={data?.itemCards} />
         ) : (
           data?.categories?.map((categoryItem) => (
-            <ItemList items={categoryItem?.itemCards} />
+            <ItemList
+              key={categoryItem?.title}
+              items={categoryItem?.itemCards}
+            />
           ))
         )}
       </div>

@@ -12,7 +12,7 @@ const RestaurantMenu = () => {
 
   if (resInfo === null || resInfo.length == 0) return <Shimmer />;
 
-  console.log(resInfo, "RESINFO");
+  // console.log(resInfo, "RESINFO");
   const { name, cuisines, costForTwoMessage } =
     resInfo?.cards[2]?.card?.card?.info;
 
@@ -23,7 +23,7 @@ const RestaurantMenu = () => {
     resInfo?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards.filter(
       (c) => c.card?.["card"]?.["@type"]
     );
-  console.log(categories, "CATEGORIES");
+  // console.log(categories, "CATEGORIES");
 
   return (
     <>

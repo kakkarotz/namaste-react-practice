@@ -38,3 +38,21 @@
 - - Address
 - - Contact
     \*/
+
+#Types of developer Testing
+
+- Unit testing
+- Integration testing
+- End to End testing
+
+#Setting up Testing in our app
+
+- Install React Testing Library
+- Install jest
+- Install Babel dependencies
+- Configure Babel
+- Configure Parcel Babel file to disable default babel transpilation
+- Execute Jest => npx jest --init
+- Install jsdom Library
+- Install @babel/preset-react - to make JSX work in test cases
+- Install @testing-library/jest-dom
